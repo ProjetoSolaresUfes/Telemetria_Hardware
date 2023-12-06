@@ -46,7 +46,7 @@
         "silk_text_upright": false,
         "zones": {
           "45_degree_only": false,
-          "min_clearance": 0.756
+          "min_clearance": 0.7999999999999999
         }
       },
       "diff_pair_dimensions": [
@@ -409,7 +409,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "PCB_Telemetria_2022.kicad_pro",
+    "filename": "Telemetria_Hardware.kicad_pro",
     "version": 1
   },
   "net_settings": {
