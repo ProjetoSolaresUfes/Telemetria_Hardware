@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "ADS1115")(type "KiCad")(uri "${KIPRJMOD}/1_external_components/ADS1115/ADS1115.kicad_sym")(options "")(descr ""))
   (lib (name "BUTT")(type "KiCad")(uri "${KIPRJMOD}/1_external_components/BUTT/BUTT.kicad_sym")(options "")(descr ""))
+  (lib (name "esp32_devkit_v1_doit")(type "Legacy")(uri "${KIPRJMOD}/1_external_components/ESP32/ESP32.pretty/esp32_devkit_v1_doit.lib")(options "")(descr ""))
 )
