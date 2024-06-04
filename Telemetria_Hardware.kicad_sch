@@ -1721,24 +1721,22 @@
 				)
 			)
 		)
-		(symbol "Switch:SW_MEC_5G"
-			(pin_numbers hide)
+		(symbol "Switch:SW_SPST"
 			(pin_names
-				(offset 1.016) hide)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+				(at 0 3.175 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SW_MEC_5G"
-				(at 0 -1.524 0)
+			(property "Value" "SW_SPST"
+				(at 0 -2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1746,24 +1744,6 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "MEC 5G single pole normally-open tactile switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1772,7 +1752,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "Datasheet" "~"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1781,7 +1761,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SW*MEC*5G*"
+			(property "Description" "Single Pole Single Throw (SPST) switch"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1790,7 +1770,16 @@
 					(hide yes)
 				)
 			)
-			(symbol "SW_MEC_5G_0_1"
+			(property "ki_keywords" "switch lever"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_SPST_0_0"
 				(circle
 					(center -2.032 0)
 					(radius 0.508)
@@ -1804,19 +1793,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy -1.524 0.254) (xy 1.524 1.778)
 					)
 					(stroke
 						(width 0)
@@ -1837,6 +1814,8 @@
 						(type none)
 					)
 				)
+			)
+			(symbol "SW_SPST_1_1"
 				(pin passive line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -1865,45 +1844,7 @@
 							)
 						)
 					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "SW_MEC_5G_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54) hide
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54) hide
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2672,12 +2613,6 @@
 		(uuid "46264b6e-a091-4a7a-8f40-a436e0629edd")
 	)
 	(junction
-		(at 60.96 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "46c06c5e-8253-4690-9cf0-1ddc44b8c056")
-	)
-	(junction
 		(at 127 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2814,12 +2749,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f003bcc9-12b7-4b3a-958b-6367765f6b91")
-	)
-	(junction
-		(at 50.8 22.86)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f96ad95e-16bb-49ad-9eb2-637bd68a62ec")
 	)
 	(junction
 		(at 127 137.16)
@@ -3776,16 +3705,6 @@
 			(type default)
 		)
 		(uuid "96f06ab1-3032-403c-8267-b3f07dbf8086")
-	)
-	(wire
-		(pts
-			(xy 50.8 22.86) (xy 60.96 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d5e0b16-aa2a-45ea-8a59-b5e0f961cf07")
 	)
 	(wire
 		(pts
@@ -5422,79 +5341,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_MEC_5G")
-		(at 55.88 22.86 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "461863bb-793a-42ca-a254-1703d8ca4a0f")
-		(property "Reference" "SW1"
-			(at 55.88 16.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "RESET BUTTON"
-			(at 55.88 19.05 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "BUTT:BUTT"
-			(at 55.88 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.apem.com/int/index.php?controller=attachment&id_attachment=488"
-			(at 55.88 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 55.88 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1304b568-e6c0-4776-a6ad-df6eb6b46a7d")
-		)
-		(pin "2"
-			(uuid "a6eb5d57-8904-43b6-a0a7-8e011e47130d")
-		)
-		(pin "4"
-			(uuid "21f20b84-9df1-4294-a1df-eefb759428a2")
-		)
-		(pin "3"
-			(uuid "bb84fe19-790c-423e-87c7-d2f699cff2cc")
-		)
-		(instances
-			(project "Telemetria_Hardware"
-				(path "/c806ca64-4076-499b-9029-155759542c55"
-					(reference "SW1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Amplifier_Operational:CA3140")
 		(at 251.46 43.18 180)
 		(unit 1)
@@ -6455,6 +6301,74 @@
 			(project "Telemetria_Hardware"
 				(path "/c806ca64-4076-499b-9029-155759542c55"
 					(reference "ACS3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Switch:SW_SPST")
+		(at 55.88 22.86 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b1da9a1e-b0a4-4a97-a3a0-7a6de4b7c9e1")
+		(property "Reference" "SW1"
+			(at 55.88 16.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SW_SPST"
+			(at 55.88 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Button_Switch_THT:SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm"
+			(at 55.88 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 55.88 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Single Pole Single Throw (SPST) switch"
+			(at 55.88 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "60ef1ec3-06be-4c5c-8ffb-f1bb7376132c")
+		)
+		(pin "1"
+			(uuid "ffc90513-127e-45dd-b118-c67b70cb8f85")
+		)
+		(instances
+			(project "Telemetria_Hardware"
+				(path "/c806ca64-4076-499b-9029-155759542c55"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
