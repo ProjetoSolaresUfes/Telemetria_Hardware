@@ -1,0 +1,7 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ADS1115")(type "KiCad")(uri "${KIPRJMOD}/1_external_components/ADS1115/ADS1115.pretty")(options "")(descr ""))
+  (lib (name "BUTT")(type "KiCad")(uri "${KIPRJMOD}/1_external_components/BUTT/BUTT.pretty")(options "")(descr ""))
+  (lib (name "ESP32-DOIT-DEVKIT")(type "KiCad")(uri "${KIPRJMOD}/1_external_components/ESP32-DOIT-DEVKIT/ESP32-DOIT-DEVKIT.pretty")(options "")(descr ""))
+  (lib (name "ESP32")(type "KiCad")(uri "${KIPRJMOD}/1_external_components/ESP32/ESP32.pretty")(options "")(descr ""))
+)
