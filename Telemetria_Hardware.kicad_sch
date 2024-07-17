@@ -4045,6 +4045,16 @@
 		)
 		(uuid "77d7f276-5949-4ae5-b2ef-ae9f637f1670")
 	)
+	(text "Ios 33 é o fio do bateria"
+		(exclude_from_sim no)
+		(at 77.724 158.75 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e2a142c9-7c53-4e08-b566-6283081598c4")
+	)
 	(text "procurar saber se tem que passar apenas 3,3V para o esp e fazer os calculos dos restistores responsaveis pelo divisor de tensão"
 		(exclude_from_sim no)
 		(at 199.136 18.288 0)
@@ -4066,17 +4076,6 @@
 			)
 		)
 		(uuid "f1627f01-4ab1-4ed6-bf73-7543e1d5531d")
-	)
-	(label "Ios 33 é o fio do bateria"
-		(at 66.04 158.75 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "455946ed-05ef-4cd3-aa57-0ebd37e65681")
 	)
 	(symbol
 		(lib_id "Connector_KRE_3W_5,08mm:1715734")
